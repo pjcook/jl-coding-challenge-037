@@ -97,6 +97,25 @@ public func recurseLunchOptions2(fruits: [Fruit]) -> Set<Set<Fruit>> {
     return results
 }
 
+public func possibleLunches3(fruits: [Fruit]) -> [[Fruit]] {
+    var results = [[Fruit]]()
+    let count = fruits.count
+    let maxValue = Int(pow(Double(2), Double(count)))
+    print("count", maxValue)
+    for i in (1..<maxValue) {
+        var items = [Fruit]()
+        let indexer = i.binary(padLength: count)
+        for (index, value) in indexer.enumerated() {
+            if value == "1" {
+                items.append(fruits[index])
+            }
+        }
+        results.append(items)
+    }
+    
+    return results
+}
+
 /*
  a,b,c,d,e
 

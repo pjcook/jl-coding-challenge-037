@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D55AE62828C0F38E00C43B54 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55AE62728C0F38E00C43B54 /* Extensions.swift */; };
 		D59CC24F28BF48730076E133 /* Challenge37.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D59CC24628BF48730076E133 /* Challenge37.framework */; };
 		D59CC25428BF48730076E133 /* Challenge37Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59CC25328BF48730076E133 /* Challenge37Tests.swift */; };
 		D59CC25F28BF48830076E133 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = D59CC25E28BF48830076E133 /* Readme.md */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D55AE62728C0F38E00C43B54 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D59CC24628BF48730076E133 /* Challenge37.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Challenge37.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CC24E28BF48730076E133 /* Challenge37Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Challenge37Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59CC25328BF48730076E133 /* Challenge37Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge37Tests.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 		D59CC23C28BF48730076E133 = {
 			isa = PBXGroup;
 			children = (
+				D55AE62728C0F38E00C43B54 /* Extensions.swift */,
 				D59CC25E28BF48830076E133 /* Readme.md */,
 				D59CC24828BF48730076E133 /* Challenge37 */,
 				D59CC25228BF48730076E133 /* Challenge37Tests */,
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D59CC26128BF48CF0076E133 /* Challenge.swift in Sources */,
+				D55AE62828C0F38E00C43B54 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +353,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -404,11 +409,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B7H9Y9D4HC;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.software101.Challenge37Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
